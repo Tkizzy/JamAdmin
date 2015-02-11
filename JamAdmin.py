@@ -218,15 +218,17 @@ class JamApp(App):
 		self.popup.open()
 
 	def kickCommit(self,evt = None):
-		print "kick commit..test"
+		print "kick commit.."
 		print "should kick slot",self.kickSlotInput.text,"reason: ",self.kickPopupReasonInput.text
+		telParse.kickPlayer(self.kickSlotInput.text,self.kickPopupReasonInput.text)
 		self.popup.dismiss()
 
 	def banCommit(self,evt = None):
 		print "ban Commit:"
-		print "Should ban slot",self.banSlotInput.text,"reason: ",self.banPopupReasonInput.text
-		self.popup.dismiss()
+		print "Banning slot",self.banSlotInput.text,", reason: ",self.banPopupReasonInput.text
 		
+		telParse.banPlayer(self.banSlotInput.text,self.banPopupReasonInput.text)
+		self.popup.dismiss()
 
 	def on_text(self,instance,value):
 		print "ON TEXT,,,,"
