@@ -24,7 +24,7 @@ from os.path import join
 import telParse
 import time
 
-class JamApp(App):
+class JamAdmin(App):
 
 	print ">Class JamApp"
 
@@ -516,9 +516,9 @@ class JamApp(App):
 		#self.store.clear()
 		print self.store.exists('credentials')
 		print "erasing self.store? credentials exist?",self.store.exists('credentials')
-		self.store.clear()
+		#self.store.clear()
 		print self.store.exists('credentials')
-		self.clearStore()
+		#self.clearStore()
 		#print self.store['credentials']
 
 
@@ -541,9 +541,9 @@ class FloatInput(TextInput):
 if __name__ == "__main__":
 	#JamApp().checkCreds()
 	#JamApp().launchLogic()
-	JamApp().run()
-	JamApp().updateListOnOpen()
-	JamApp().allClear()
+	JamAdmin().run()
+	JamAdmin().updateListOnOpen()
+	JamAdmin().allClear()
 
 
 
