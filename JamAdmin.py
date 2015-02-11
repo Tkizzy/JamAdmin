@@ -1,7 +1,7 @@
 #JamAdmin V 0.1
 
 import logging
-from kivy.logger import Logger
+#from kivy.logger import Logger
 #Logger.setLevel(logging.ERROR)
 
 from kivy.core.text import LabelBase
