@@ -362,7 +362,7 @@ class JamAdmin(App):
 		print "..."#self.layoutFields
 
 	def build(self):
-		self.icon = 'JamAdminIconA.png'
+		self.icon = 'JamAdminIconA.icns'
 		self.setStore()
 		b=BoxLayout()
 		print ">>Function Build"
